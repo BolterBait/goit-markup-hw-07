@@ -1,8 +1,19 @@
 @import "./utils/variables";
+@import "./utils/hidden";
 
 @import "./base/reset";
-@import "./layout/header";
-@import "./layout/hero";
+@import "./base/common";
+
+@import "./components/header";
 @import "./components/footer";
+@import "./components/container";
+@import "./components/navigation";
+@import "./components/btn";
+
 @import "./layout/advantages";
 @import "./layout/works";
+@import "./layout/team";
+@import "./layout/hero";
+@import "./layout/project";
+@import "./layout/clients";
+@import "./layout/backdrop";

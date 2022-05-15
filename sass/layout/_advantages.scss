@@ -24,3 +24,25 @@
 .topic {
   margin-bottom: 30px;
 }
+
+.list-advantages__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.list-advantages__item {
+  width: 270px;
+  margin-right: 30px;
+}
+.list-advantages__item:last-child {
+  margin-right: 0;
+}
+
+.list-advantages {
+  display: flex;
+}
