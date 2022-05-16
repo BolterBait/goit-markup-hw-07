@@ -1,0 +1,14 @@
+%align-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%justify-content {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin align-list {
+  display: flex;
+  align-items: center;
+}
