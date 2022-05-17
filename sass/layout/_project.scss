@@ -1,7 +1,7 @@
 .button-svg {
   padding: 0;
   border: 0;
-  background-color: var(--background-text-color);
+  background-color: $background-text-color;
 }
 
 .list.item:not(:last-child) {
@@ -14,11 +14,8 @@
 }
 
 .project-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--text-decoration-color);
+  @include font(700, 18px, 2, 0.06em);
+  color: $text-decoration-color;
   margin-bottom: 4px;
 }
 
@@ -26,13 +23,13 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: $second-text-color;
 }
 
 .project-card-content {
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   padding: 20px 24px 20px 24px;
 }
 
@@ -52,15 +49,15 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--projects-card-gap));
-  margin-top: calc(-1 * var(--projects-card-gap));
+  margin-left: calc(-1 * $projects-card-gap);
+  margin-top: calc(-1 * $projects-card-gap);
 }
 
 .projects-list {
-  flex-basis: calc(100% / 3 - var(--projects-card-gap));
-  margin-left: var(--projects-card-gap);
-  margin-top: var(--projects-card-gap);
-  background: var(--background-text-color);
+  flex-basis: calc(100% / 3 - $projects-card-gap);
+  margin-left: $projects-card-gap;
+  margin-top: $projects-card-gap;
+  background: $background-text-color;
   box-sizing: border-box;
 }
 
@@ -83,10 +80,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(null, 18px, 1.56, 0.03em);
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);

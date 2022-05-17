@@ -15,13 +15,9 @@
 .mail-link,
 .tel-link {
   @include align-list;
-
-  color: var(--second-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  fill: var(--second-text-color);
+  color: $second-text-color;
+  @include font(500, 14px, 1.14, 0.02em);
+  fill: $second-text-color;
 }
 
 .mail-link:hover,
@@ -32,6 +28,6 @@
 .tel:focus,
 .mail:hover,
 .tel:hover {
-  color: var(--link-hover-color);
-  fill: var(--link-hover-color);
+  color: $link-hover-color;
+  fill: $link-hover-color;
 }

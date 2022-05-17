@@ -3,10 +3,7 @@
 }
 
 .works__header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font(700, 36px, 1.17, 0.03em);
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
@@ -35,10 +32,7 @@
 }
 
 .work-list__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
 }
