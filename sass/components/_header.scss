@@ -1,5 +1,5 @@
-.container__main-nav {
-  @include align-list;
+.container__header {
+  @extend %align-list;
 }
 
 .navigation {
@@ -8,10 +8,9 @@
 
 .site-nav {
   display: flex;
-}
-
-.site-nav__list {
-  margin-left: 50px;
+  &__item {
+    margin-left: 50px;
+  }
 }
 
 .site-nav__link {
@@ -50,19 +49,16 @@
   align-items: center;
 }
 
-.contacts__list {
+.contacts__item {
   margin-left: 50px;
 }
 
-.button-envelope,
-.button-phone {
+.contacts__icon,
+.contacts__icon {
   margin-right: 10px;
 }
 
 .header {
   background-color: $background-text-color;
-}
-
-.header__border {
   border-bottom: 1px solid #ececec;
 }

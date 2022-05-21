@@ -7,10 +7,10 @@ body {
   font-family: Raleway, sans-serif;
   @include font(700, 26px, 1.19, 0.03em);
   color: $link-hover-color;
-  &__link-top {
+  &__header {
     margin-right: 93px;
   }
-  &--dark {
+  &__dark {
     color: #000000;
   }
   &--light {

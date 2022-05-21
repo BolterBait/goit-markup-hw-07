@@ -2,8 +2,7 @@
 .link,
 .mail,
 .tel,
-.mail-link,
-.tel-link,
+.contacts__link,
 .post-address,
 .project-link {
   text-decoration: none;
@@ -12,18 +11,15 @@
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-link,
-.tel-link {
-  @include align-list;
+.contacts__link {
+  @extend %align-list;
   color: $second-text-color;
   @include font(500, 14px, 1.14, 0.02em);
   fill: $second-text-color;
 }
 
-.mail-link:hover,
-.tel-link:hover,
-.mail-link:focus,
-.tel-link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
 .mail:focus,
 .tel:focus,
 .mail:hover,

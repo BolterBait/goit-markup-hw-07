@@ -1,30 +1,22 @@
 .hero__button {
-  color: $background-text-color;
-  background-color: $link-hover-color;
-  font-family: inherit;
-  @include font(700, 16px, 1.88, 0.06em);
-  min-width: 200px;
+  @extend %button;
   align-items: center;
   text-align: center;
-  border-radius: 4px;
   padding: 10px 32px 10px 32px;
-  border: 0px;
   cursor: pointer;
 }
 
-.button-filter {
-  font-family: inherit;
+.filter__button {
   color: $text-decoration-color;
   background-color: #f5f4fa;
+  font-family: inherit;
   @include font(500, 16px, 1.63, 0.03em);
   min-width: 73px;
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
   border: 1px solid $border-color;
-
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.25);
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,20 +29,14 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 }
+
 .button-modal {
-  color: $background-text-color;
-  font-family: inherit;
-  @include font(700, 16px, 1.88, 0.06em);
-  min-width: 200px;
+  @extend %button;
   display: block;
   padding: 10px 55px 10px 56px;
-  border: 0px;
   margin-left: auto;
   margin-right: auto;
-
-  background-color: $link-hover-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,

@@ -1,4 +1,4 @@
-.team {
+.section--otherbackground {
   background: #f5f4fa;
 }
 
@@ -24,30 +24,19 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.member-card__header {
+.member-card__title {
   text-align: center;
-}
-
-.team__header,
-.header-clients {
-  @include font(700, 36px, 1.17, 0.03em);
+  @include font(500, 16px, 1.19, 0.03em);
   margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
-.member-card__position {
+.member-card__text {
   color: $second-text-color;
   @include font(null, 16px, 1.19, 0.03em);
   margin-top: 0;
   margin-bottom: 16px;
   text-align: center;
-}
-
-.member-card__header {
-  @include font(500, 16px, 1.19, 0.03em);
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .soc-list__link {

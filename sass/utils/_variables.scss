@@ -9,4 +9,7 @@ $border-color: #eeeeee;
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  &--nopaddingtop {
+    padding-top: 0px;
+  }
 }
